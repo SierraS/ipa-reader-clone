@@ -23,7 +23,7 @@ export class AppStack extends Stack {
       value: bucket.bucketName,
     });
     const fn = new lambda.Function(this, 'MyFunction', {
-      runtime: lambda.Runtime.NODEJS_12_X,
+      runtime: lambda.Runtime.PYTHON_3_9,
       code: lambda.Code.fromAsset("backend"),
       memorySize: 3000,
       timeout: cdk.Duration.seconds(20),
