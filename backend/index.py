@@ -4,7 +4,7 @@ import os
 from contextlib import closing
 
 
-def lambda_handler(event, context):
+def handler(event, context):
     # init polly
     polly = boto3.client("polly")
 
